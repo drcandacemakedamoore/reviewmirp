@@ -16,5 +16,5 @@ jobs:
       - run: python3 -m venv .venv
       - run: .venv/bin/python -m pip install "pytest<8.1"
       - run: .venv/bin/python -m pip install "numpy>=1.25"
-      - run: .venv/bin/python -m pip install "ray>=2.7.0"
+      - run: .venv/bin/python -m pip install "ray"
       - run: .venv/bin/python -m pytest test
