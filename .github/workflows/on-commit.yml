@@ -14,6 +14,5 @@ jobs:
       - uses: s-weigand/setup-conda@v1
         
       - run: python3 -m venv .venv
-      - run: .venv/bin/python -m pip install "pytest<8.1" 
-      - run: python3 -m pip install ./dist/*.whl
+      - run: .venv/bin/python -m pip install "pytest<8.1", "numpy>=1.25", "pandas>=2.0.0", "ray>=2.7.0"
       - run: .venv/bin/python -m pytest test
